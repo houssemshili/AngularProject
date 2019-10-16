@@ -1,0 +1,7 @@
+<h1>Bienvenue dans le contact Manager V{{version}}</h1>
+<ul>
+    <li (click)="UpdateSelectedMenu('home')" routerLink="/" ><a [ngClass]="{'active' : currentMenu == 'home' }">Home</a></li>
+    <li (click)="UpdateSelectedMenu('liste')" routerLink="/Liste"><a [ngClass]="{'active' : currentMenu == 'liste' }">Liste</a></li>
+</ul>
+<router-outlet></router-outlet>
+

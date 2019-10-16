@@ -1,0 +1,13 @@
+<div *ngIf="selectedContact">
+    <button (click)="DisableSelectedContact()">Fermer</button>
+    <h2>Détails</h2>
+    <label>Id : </label>{{selectedContact.id}}<br/>
+    <label>Nom : </label>{{selectedContact.name}}<br/>
+    <label>Nom Utilisateur : </label>{{selectedContact.username}}<br/>
+    <label>Email : </label>{{selectedContact.email}}<br/>
+    <button (click)="addWarning()" style="background : hsl(32, 80%, 56%)">Publier un warning</button>
+    <br/>
+    <button (click)="addError()"  style="background :red">Publier une erreur</button>
+    <br/>
+    <button (click)="clearAlert()"  style="background:green">Clear</button>
+  </div>

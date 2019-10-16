@@ -1,0 +1,8 @@
+<h2>Liste utilisateurs</h2>
+<app-alert></app-alert>
+<ul>
+  <li (click)="UpdateSelectedContact(contact)" [ngClass]="{'selected' : currentContact ==contact }"
+   *ngFor ="let contact of contacts">{{contact.id}} {{contact.name}}</li>
+</ul>
+
+<app-contact [selectedContact] = "currentContact"></app-contact>

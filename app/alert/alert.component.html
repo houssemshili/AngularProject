@@ -1,0 +1,10 @@
+<div *ngIf="messages">
+    <ul>
+        <li *ngFor="let message of alertservice.messages">
+                <div class="alert {{message.type}}">
+                        {{message.message}} | {{message.type}}
+                </div>
+        </li>
+    </ul>
+
+</div>

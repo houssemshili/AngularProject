@@ -1,0 +1,14 @@
+li{
+    display: block;
+    padding : 10px;
+    background: aqua;
+    margin: 10px;
+    border: 1px solid black;
+}
+li:hover{
+background: white;
+cursor: pointer;
+}
+.selected{
+    background:gray;
+}

@@ -1,0 +1,11 @@
+.alert{
+    border : 1px solid black;
+    padding: 10px;
+    background: chartreuse;
+}
+.warning{
+    background :  hsl(32, 80%, 56%);
+}
+.error {
+    background:red;
+}
